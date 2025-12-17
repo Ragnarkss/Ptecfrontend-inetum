@@ -47,6 +47,12 @@ ptecfrontend/
 ├── tsconfig.json
 └── README.md
 ```
+## Prerequisitos
+Instalar Node.js 22.16.0
+Instalar Visual Studio Code
+instalar extensiones de visual studio:
+ - Cucumber
+ - Playwright
 
 ## Instalación
 
@@ -58,18 +64,17 @@ ptecfrontend/
 
 4 - Instalar el nodo ts usando npm install -D ts-node
 
-5 - Crea las carpetas para administrar funciones y pasos: Eliminar playwright.config.ts, 
-y la carpeta tests & tests-examples
+5 - Eliminar playwright.config.ts, y la carpeta tests & tests-examples
 
 
-```
+
 
 ## Ejecución de Pruebas
 
 ### Ejecutar todas las pruebas
-```bash
+
 6 - ejecutar el comando: npm run cucumber
-```
+
 
 ## Escenarios de Prueba
 
