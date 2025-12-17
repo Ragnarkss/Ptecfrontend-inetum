@@ -1,0 +1,309 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-en-sauce-demo;login-exitoso-con-usuario-estándar",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login exitoso con usuario estándar",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 184791400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 203672300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario navega a Sauce Demo",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1026267199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "inicia sesión con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132720400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "debería ver la página de productos",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21703800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60052599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2275400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-en-sauce-demo;login-fallido-con-usuario-bloqueado",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Login fallido con usuario bloqueado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 152681200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 186998700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "el usuario navega a Sauce Demo",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715870100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "inicia sesión con usuario \"locked_out_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91189200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "debería ver un mensaje de error",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7033099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56432300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1294399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-en-sauce-demo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login en Sauce Demo",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "compra-de-productos;compra-completa-de-un-producto",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Compra completa de un producto",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151284700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 156336500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario navega a Sauce Demo",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 734010299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "inicia sesión con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105524800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "agrega un producto al carrito",
+            "match": {
+              "location": "src\\steps\\purchase.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37260100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "visualiza el carrito",
+            "match": {
+              "location": "src\\steps\\purchase.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38901600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "completa el proceso de compra",
+            "match": {
+              "location": "src\\steps\\purchase.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180415299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "debería ver la confirmación de la compra",
+            "match": {
+              "location": "src\\steps\\purchase.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3863199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 68637200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1280000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "compra-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Compra de productos",
+    "tags": [],
+    "uri": "features\\purchase.feature"
+  }
+]
